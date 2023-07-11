@@ -14,11 +14,11 @@ function App() {
         dispatch(fetchAuthMe())
     }, [])
 
-    React.useEffect(() => {
-        setTimeout(() => {
-            dispatch(fetchAuthMe())
-        }, [])
-    }, [])
+    // React.useEffect(() => {
+    //     setTimeout(() => {
+    //         dispatch(fetchAuthMe())
+    //     }, [])
+    // }, [])
 
     return (
         <>
