@@ -44,7 +44,7 @@ export const AddPost = () => {
                     setTitle(data.title)
                     setText(data.text)
                     setImageUrl(data.imageUrl)
-                    setTags(data.tags)
+                    setTags(data.tags.join(', '))
             }).catch(err => {
                 console.warn(err)
                 alert('Ошибка при получении статьи!')
