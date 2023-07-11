@@ -21,7 +21,6 @@ export const Home = () => {
     const isTagsLoading = tags.status === 'loading'
 
     React.useEffect(() => {
-        dispatch(fetchPosts())
         dispatch(fetchTags())
     }, [])
 
